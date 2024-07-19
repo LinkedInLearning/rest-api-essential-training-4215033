@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>REST API</title>
+</head>
+<body>
+  <div class="w-11/12 m-auto my-10 text-sm">
+    <!--  -->
+    <h1 class="text-2xl font-bold mt-2 pb-2 border-b-2">REST API<small>（サンプル天気予報取得API）</small></h1>
+    <!--  -->
+    <section id="request" class="border-b-2 border-dashed pb-16">
+      <!--  -->
+      <h2 class="text-2xl mt-8">＃リクエスト</h2>
+      <!--  -->
+      <section class="mt-8">
+        <h3 class="text-xl font-bold">1. GETメソッド</h3>
+        <!--  -->
+        <div class="border-2 mt-4 p-5">
+          <div>
+            <!--  -->
+            <label for="get-param">都市名：</label>
+            <!--  -->
+            <select id="get-param" class="py-1 px-1 border-[1px] border-gray-300 rounded">
+              <option value="">指定なし</option>
+              <option value="tokyo">東京</option>
+              <option value="osaka">大阪</option>
+            </select>
+          </div>
+          <!--  -->
+          <button id="get" class="w-[300px] mt-5 text-white bg-teal-500 rounded py-1 px-3 hover:bg-teal-400">GETボタン：クリックでAPIにアクセス</button>
+          <!--  -->
+        </div>
+      </section>
+      <!--  -->
+      <section class="mt-8">
+        <h3 class="text-xl font-bold mb-3">2. POSTメソッド</h3>
+        <!--  -->
+        <div class="border-2 mt-4 p-5">
+          <div>
+            <!--  -->
+            <label for="get-param">都市名：</label>
+            <!--  -->
+            <select id="post-param" class="py-1 px-1 border-[1px] border-gray-300 rounded">
+              <option value="">指定なし</option>
+              <option value="tokyo">東京</option>
+              <option value="osaka">大阪</option>
+            </select>
+          </div>
+          <!--  -->
+          <button id="post" class="w-[300px] mt-5 text-white bg-teal-500 rounded py-1 px-3 hover:bg-teal-400">POSTボタン：クリックでAPIにアクセス</button>
+          <!--  -->
+        </div>
+      </section>
+      <!--  --> 
+    </section>
+    <!--  -->
+    <section id="response">
+      <!--  -->
+      <h2 class="text-2xl mt-12">＃レスポンス</h2>
+      <!--  -->
+      <button id="result-reset" class="w-[100px] mt-5 text-gray-500 border-[1px] border-gray-300 rounded py-1 px-3 hover:bg-gray-200">リセット</button>
+      <!--  -->
+      <section class="mt-8">
+        <h3 class="text-xl font-bold">1. ステータスコード</h3>
+        <div id="result-status-code" class="border-2 p-5 mt-3 bg-black text-white whitespace-pre">
+          ここに、ステータスコードの結果が表示されます。
+        </div>
+      </section>
+      <!--  -->
+      <section class="mt-8">
+        <h3 class="text-xl font-bold">2. レスポンスヘッダー</h3>
+        <div id="result-headers" class="border-2 p-5 mt-3 bg-black text-white whitespace-pre">
+          ここに、レスポンスヘッダーの結果が表示されます。
+        </div>
+      </section>
+      <!--  -->
+      <section class="mt-8">
+        <h3 class="text-xl font-bold">3. レスポンスボディ</h3>
+        <div id="result-body" class="border-2 p-5 mt-3 bg-black text-white whitespace-pre">
+          ここに、レスポンスボディの結果が表示されます。
+        </div>
+      </section>
+      <!--  -->
+    </section>
+    <!--  -->
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
