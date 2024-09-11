@@ -14,7 +14,7 @@ const resultStatusCodeArea = document.getElementById('result-status-code');
 const resultHeadersArea = document.getElementById('result-headers');
 const resultBodyArea = document.getElementById('result-body');
 
-// 結果エリア初稿テキスト
+// 結果エリア初期テキスト
 const resultStatusCodeAreaText = 'ここに、ステータスコードの結果が表示されます。';
 const resultHeadersAreaText = 'ここに、レスポンスヘッダーの結果が表示されます。';
 const resultBodyAreaText = 'ここに、レスポンスボディの結果が表示されます。';
