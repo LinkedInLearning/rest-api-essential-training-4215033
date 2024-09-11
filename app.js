@@ -97,7 +97,7 @@ postButton.addEventListener('click', async () => {
       'x-api-key': apiKey, // リクエストヘッダーにAPIキーを設定
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ // JSON形式をテキストに変換してリクエストボディを設定
+    body: JSON.stringify({ // オブジェクトをJSON形式のテキストに変換してリクエストボディを設定
       'city': city,
     }),
   });
