@@ -35,4 +35,4 @@ _Webデザイナー、Webプログラマー_
 この講師の他のコースを視聴する：[LinkedInラーニング](https://www.linkedin.com/learning/instructors/8515378)
 
 [lil-course-url]: https://www.linkedin.com/learning/rest-api-essential-training
-[lil-thumbnail-url]: 
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQH9gHG1Ac3Fdg/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1731960329615?e=2147483647&v=beta&t=ueTIjEf9mJwHlB7jhXFAJCGGMrP8XaRWaDHHK8oOK8g
